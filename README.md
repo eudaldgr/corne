@@ -1,3 +1,3 @@
-# https://eudald.gr
+# https://eudald.gr/corne
 
-personal website
+corne jekyll theme
