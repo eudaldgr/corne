@@ -14,8 +14,18 @@
 			</div>
 		</div>
 
-		<main class="container">
+		<main class="main-content">
+			<section class="blog">
+				<div class="container">
+					<div class="posts">
 
+						{% for post in site.posts %}
+							{% include post.html %}
+						{% endfor %}
+
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<!-- footer -->
