@@ -1,4 +1,4 @@
-# Corne
+# 🐔 Corne
 
 An amazing jekyll theme based on the best breakfast ever!
 
