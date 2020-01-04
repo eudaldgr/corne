@@ -6,5 +6,7 @@ description: > # Description of website
 baseurl: "/corne" # The subpath for the website, e.g.: /shop, /blog
 url: "https://eudald.gr" # The hostname, e.g.: https://www.example.org
 
+jumbo_img: posts/corne.jpg # The backgroun image
+
 plugins:
   - jekyll-menus
