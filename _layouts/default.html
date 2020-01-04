@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{default: "en-US"}}">
 	<!-- head -->
 	{% include head.html %}
 
@@ -7,7 +7,16 @@
 		<!-- header -->
 		{% include header.html %}
 
-		<!-- future default -->
+		<!-- default -->
+		<div class="jumbotron-fluid" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.jumbo_img }}">
+			<div class="container">
+
+			</div>
+		</div>
+
+		<main class="container">
+
+		</main>
 
 		<!-- footer -->
 		{% include footer.html %}
