@@ -2,6 +2,6 @@
 title: Corne # your site
 author: Github User
 description: > # Description of website
-	Some wonderful description for the website.
+  Some wonderful description for the website.
 baseurl: "/corne" # The subpath for the website, e.g.: /shop, /blog
 url: "https://eudald.gr" # The hostname, e.g.: https://www.example.org
