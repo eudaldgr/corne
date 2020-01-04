@@ -1,4 +1,4 @@
 ---
 layout: default
-title: Eudald Jekyll Theme
+title: Corne Jekyll Theme
 ---

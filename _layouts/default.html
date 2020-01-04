@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{default: "en-US"}}">
+<html lang="en-US">
 	<!-- head -->
 	{% include head.html %}
 
@@ -20,7 +20,7 @@
 					<div class="posts">
 
 						{% for post in site.posts %}
-							{% include post.html %}
+							{% include card.html %}
 						{% endfor %}
 
 					</div>
