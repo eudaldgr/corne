@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-corne"
   spec.version       = "0.0.1"
-  spec.authors       = ["Eudald Gubert i Roldan"]
+  spec.authors       = ["eudald gubert i roldan"]
   spec.email         = ["hola@eudald.gr"]
 
   spec.summary       = "A jekyll theme based on the best breakfast ever!"
@@ -14,6 +14,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 4.0"
 
-  spec.add_development_dependency "bundler", "~> 2.0.2"
+  spec.add_development_dependency "bundler", "~> 1.17.3"
   spec.add_development_dependency "rake", "~> 12.0"
 end
