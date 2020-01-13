@@ -6,4 +6,4 @@ description: > # Description of website
 baseurl: "/corne" # The subpath for the website, e.g.: /shop, /blog
 url: "https://eudaldgr.github.io" # The hostname, e.g.: https://www.example.org
 
-jumbo_img: posts/corne.jpg # The background image
+jumbo_img: assets/cover.jpg # The background image
