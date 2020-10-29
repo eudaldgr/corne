@@ -12,9 +12,9 @@ layout: default
               {{ page.title }}
             </h1>
             <h2 class="subtitle">
-                by <a href="u/{{ page.author }}">{{ page.author }}</a> | {{ page.date | date_to_string: site.lang }} | {% for _tag in page.tags %}<a class="tag my-2 is-{{ _color | sample }}" href="t/{{ _tag }}">{{ _tag }}</a> {% endfor %}
+                by <a href="{{ site.baseurl }}/u/{{ page.author }}">{{ page.author }}</a> | {{ page.date | date_to_string: site.lang }} | {% for _tag in page.tags %}<a class="tag my-2 is-{{ _color | sample }}" href="{{ site.baseurl }}/t/{{ _tag }}">{{ _tag }}</a> {% endfor %}
             </h2>
-            <img width="100%" src="{{ page.img }}" alt="{{ page.alt }}">
+            <img width="100%" src="{{ site.baseurl }}{{ page.img }}" alt="{{ page.alt }}">
           </div>
         </div>
       </div>

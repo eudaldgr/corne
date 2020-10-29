@@ -3,7 +3,7 @@ title: Corne # your site
 author: Corn Fakes
 description: > # Description of website
   Some wonderful description for the website.
-baseurl: "corne" # The subpath for the website, e.g.: /shop, /blog
+baseurl: "/corne" # The subpath for the website, e.g.: /shop, /blog
 url: "https://eudaldgr.github.io" # The hostname, e.g.: https://www.example.org
 
 lang: en-US
