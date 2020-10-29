@@ -4,7 +4,7 @@ author: Corn Fakes
 description: > # Description of website
   Some wonderful description for the website.
 baseurl: "" # The subpath for the website, e.g.: /shop, /blog
-url: "https://corne.github.io" # The hostname, e.g.: https://www.example.org
+url: "https://eudaldgr.github.io" # The hostname, e.g.: https://www.example.org
 
 lang: en-US
 
