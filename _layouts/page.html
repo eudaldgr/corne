@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
-	<!-- head -->
-	{% include head.html %}
-
-	<body class="site">
-		<!-- header -->
-		{% include header.html %}
-
-		<!-- page -->
-		<main class="main-content">
-			<div class="container">
-				<!-- wip -->
-			</div>
-		</main>
-
-		<!-- footer -->
-		{% include footer.html %}
-	</body>
-</html>
+---
+layout: default
+---
+<div class="tile is-parent">
+  <div class="tile is-child">
+    <div class="box">
+      <div class="hero">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title">
+              {{ page.title }}
+            </h1>
+            <img width="100%" src="{{ page.img }}" alt="{{ page.alt }}">
+          </div>
+        </div>
+      </div>
+      <div class="px-5 pb-5 has-text-justified">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
