@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign _color = 'primary,link,info,success,warning,danger,purple,pink,orange,black' | split: ',' %}
-<div class="tile is-vertical is-8">
+<div class="tile is-vertical is-9">
   {% for _post in site.posts %}
     {% assign _index = forloop.index | modulo: 2 %}
     {% if _index != 0 %}
