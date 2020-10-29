@@ -1,4 +1,4 @@
 ---
-layout: default
+layout: blog
 title: Corne Jekyll Theme
 ---
