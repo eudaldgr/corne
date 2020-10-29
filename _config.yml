@@ -20,15 +20,15 @@ keybase_username: corne
 
 permalink: /:title
 
+paginate: 8
+
 sass:
   sass_dir: _sass
   style: compressed
 
-include:
- - _pages
-
-plugins:
- - jekyll-menus
+collections:
+  menus:
+    output: true
 
 compress_html:
   clippings: all

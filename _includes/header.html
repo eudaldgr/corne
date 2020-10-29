@@ -2,7 +2,7 @@
   <nav class="navbar has-shadow is-spaced">
     <div class="container">
       <div class="navbar-brand px-6">
-        <a class="py-3" href="{{ site.baseurl }}">
+        <a class="py-3" href="{{ site.baseurl }}/">
           <figure class="image is-128x128">
             <img class="is-rounded" src="{{ site.baseurl }}/assets/logo.svg">
           </figure>
@@ -15,8 +15,8 @@
       </div>
       <div id="navBurger" class="navbar-menu">
         <div class="navbar-start">
-          {% for item in site.menus.header %}
-          <a class="navbar-item button is-light" href="{{ item.url }}">
+          {% for item in site.menus %}
+          <a class="navbar-item button is-light" href="{{ site.baseurl }}{{ item.url }}">
             {{ item.pre }}
             <span><strong>{{ item.title }}</strong></span>
           </a>
