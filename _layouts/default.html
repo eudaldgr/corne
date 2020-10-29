@@ -1,35 +1,39 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
-	<!-- head -->
-	{% include head.html %}
-
-	<body class="site">
-		<!-- header -->
-		{% include header.html %}
-
-		<!-- default -->
-		<div class="jumbotron jumbotron-fluid jumbotron-bg">
-			<div class="container">
-				<h1 class="display-4">{{ site.title }}</h1>
-			</div>
-		</div>
-
-		<!-- main -->
-		<main class="main-content">
-			<section class="blog">
-				<div class="container">
-					<div class="posts">
-
-						{% for post in site.posts %}
-							{% include card.html %}
-						{% endfor %}
-
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<!-- footer -->
-		{% include footer.html %}
-	</body>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <section class="container px-5 py-5">
+      <div class="tile is-ancestor">
+        {{ content }}
+        <div class="tile is-vertical is-4">
+          <div class="tile is-parent">
+            <article class="tile is-child message is-dark">
+              <div class="message-header"> 
+                <p>{{ site.title }}</p>
+              </div>
+              <div class="message-body">
+                <p>{{ site.description }}</p>
+              </div>
+              <iframe width="100%" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.606507490059!2d2.9544623158990055!3d42.265574979193396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE1JzU2LjEiTiAywrA1NycyMy45IkU!5e0!3m2!1ses!2ses!4v1602065064513!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child message is-dark">
+              <div class="message-header"> 
+                <p>Enllaços</p>
+              </div>
+              <div class="message-body">
+                <p>!-- sssContent --</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include footer.html %}
+  </body>
 </html>
