@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign _color = 'primary,link,info,success,warning,danger,purple,pink,orange,black' | split: ',' %}
+<div class="tile is-vertical is-8">
+  {% for _post in site.posts %}
+    {% assign _index = forloop.index | modulo: 2 %}
+    {% if _index != 0 %}
+    <div class="tile">
+    {% endif %}
+      <div class="tile is-parent">
+        <article class="tile is-child card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <a href="{{ _post.url }}"><img src="{{ _post.img }}" alt=""></a>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media-content">
+              <p class="title is-4"><a href="{{ _post.url }}">{{ _post.title }}</a></p>
+              <p class="subtitle is-6">by <a href="u/{{ _post.author }}">{{ _post.author }}</a> | {{ _post.date | date_to_string: site.lang }} | {% for _tag in _post.tags %}<a class="tag my-2 is-{{ _color | sample }}" href="t/{{ _tag }}">{{ _tag }}</a> {% endfor %}</p>
+            </div>
+          </div>
+          <div class="content px-5 pb-5">
+            {{ _post.content | truncate: 150 }}
+          </div>
+        </article>
+      </div>
+    {% if _index == 0 %}
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
