@@ -1,18 +1,41 @@
 # THEME CONFIGURATION
 title: Corne # your site
-author: Github User
+author: Corn Fakes
 description: > # Description of website
   Some wonderful description for the website.
-baseurl: "/corne" # The subpath for the website, e.g.: /shop, /blog
-url: "https://eudaldgr.github.io" # The hostname, e.g.: https://www.example.org
+baseurl: "" # The subpath for the website, e.g.: /shop, /blog
+url: "https://corne.github.io" # The hostname, e.g.: https://www.example.org
 
-github_username: eudaldgr
-keybase_username: eudaldgr
-twitter_username: eudaldgr
-instagram_username: eudaldgr
+lang: en-US
 
-jumbo_img: assets/cover.jpg # The background image
+facebook_username: corne
+instagram_username: corne
+twitter_username: corne
+fediverse_username: corne.fedi/@corne
+github_username: corne
+telegram_username: corne
+whatsapp_username: 34666666666
+mail_username: hey@cor.ne
+keybase_username: corne
+
+permalink: /:title
 
 sass:
   sass_dir: _sass
   style: compressed
+
+include:
+ - _pages
+
+plugins:
+ - jekyll-menus
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
