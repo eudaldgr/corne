@@ -3,8 +3,21 @@
 
 @charset "UTF-8";
 
-// layout scss
-@import "menu";
+// Import the variables
+@import "sass/utilities/initial-variables.sass";
 
-// components scss
-@import	"jumbotron";
+$custom-colors: (
+  "purple": ($purple),
+  "orange": ($orange),
+  "pink": (hsl(324, 79.2%, 60.4%))
+);
+
+// bulma scss
+@import "bulma";
+
+.navbar,
+.level {
+  background-color: $light
+}
+
+$table-head-background-color: $dark;
